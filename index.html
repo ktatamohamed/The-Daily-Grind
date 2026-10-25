@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ec">
+  <meta name="description" content="Find your slower moment at The Daily Grind, a neighborhood café serving thoughtfully sourced coffee, fresh pastries, and seasonal plates.">
+  <meta property="og:title" content="The Daily Grind — Coffee, made personal">
+  <meta property="og:description" content="Thoughtfully sourced coffee, fresh pastries, and a little room to breathe. Visit The Daily Grind.">
+  <meta property="og:type" content="website">
+  <title>The Daily Grind — Coffee, made personal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="The Daily Grind home"><span class="brand-mark" aria-hidden="true">dg.</span><span>The Daily Grind<small>GOOD COFFEE. GOOD COMPANY.</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span></span><span></span></button>
+      <div class="nav-links" id="primary-navigation">
+        <a href="#about">Our story</a><a href="#menu">Menu</a><a href="#gallery">The space</a><a href="#contact">Find us</a>
+        <a class="button button-small" href="#reserve">Book a table <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shade"></div>
+      <div class="hero-content container">
+        <p class="eyebrow light-eyebrow"><span></span> YOUR NEIGHBORHOOD, A LITTLE SLOWER</p>
+        <h1 id="hero-title">A good day<br>starts <em>here.</em></h1>
+        <p class="hero-copy">Thoughtfully sourced coffee, something warm from the oven, and a little room to breathe.</p>
+        <div class="hero-actions"><a class="button" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="#reserve">Save your seat</a></div>
+        <div class="hero-note"><span class="open-dot"></span> OPEN DAILY · 7:30 AM—5 PM</div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="steam steam-one"></span><span class="steam steam-two"></span><span class="bean">●</span></div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to our story"><span></span> SCROLL TO SLOW DOWN</a>
+    </section>
+
+    <section class="intro section-pad" id="about">
+      <div class="container intro-grid">
+        <div class="intro-image reveal"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Sunlight falling across the warm, welcoming interior of a neighborhood café" loading="lazy"><span class="image-stamp">MADE WITH<br><strong>A LITTLE<br>MORE HEART</strong></span></div>
+        <div class="intro-copy reveal">
+          <p class="eyebrow"><span></span> A TABLE FOR EVERYONE</p>
+          <h2>More than a<br>morning <em>ritual.</em></h2>
+          <p class="body-copy">We opened our doors with one simple idea: the best part of the day might be the pause in the middle of it. Since 2016, we've been pouring with care, baking from scratch, and saving you a seat.</p>
+          <p class="body-copy">Good things take time. Here, you're always welcome to take yours.</p>
+          <a class="text-link" href="#contact">A little more about us <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow"><span></span> MADE FRESH, SERVED WITH CARE</p><h2 id="menu-heading">A few of our <em>favorites.</em></h2></div><p class="heading-note">Good ingredients. No shortcuts.<br>Something for every kind of morning.</p></div>
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" id="tab-coffee" type="button" role="tab" aria-selected="true" aria-controls="menu-items" data-category="coffee">Coffee</button>
+          <button class="menu-tab" id="tab-drinks" type="button" role="tab" aria-selected="false" aria-controls="menu-items" data-category="drinks" tabindex="-1">Drinks</button>
+          <button class="menu-tab" id="tab-pastries" type="button" role="tab" aria-selected="false" aria-controls="menu-items" data-category="pastries" tabindex="-1">Pastries</button>
+          <button class="menu-tab" id="tab-food" type="button" role="tab" aria-selected="false" aria-controls="menu-items" data-category="food" tabindex="-1">Food</button>
+        </div>
+        <div class="menu-grid" id="menu-items" role="tabpanel" aria-labelledby="tab-coffee" aria-live="polite"></div>
+        <p class="menu-footnote">A note: we’re happy to help with dietary needs. Just ask us when you order.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow"><span></span> YOUR CORNER OF THE WORLD</p><h2 id="gallery-heading">Come on <em>in.</em></h2></div><p class="heading-note">A sunny seat, your usual order,<br>and nowhere else to be.</p></div>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-large reveal" type="button" data-full="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=90" aria-label="View café interior"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Cozy café interior with warm wood and inviting tables" loading="lazy"><span>THE NEIGHBORHOOD TABLE</span></button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=90" aria-label="View a freshly poured cup of coffee"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=85" alt="Freshly brewed coffee and coffee beans on a wooden counter" loading="lazy"><span>POURED WITH PURPOSE</span></button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1800&q=90" aria-label="View fresh pastries"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85" alt="Freshly baked golden pastries ready for the morning" loading="lazy"><span>FRESH FROM THE OVEN</span></button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1800&q=90" aria-label="View the café's cozy seating"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=85" alt="Warm café seating with soft light and leafy plants" loading="lazy"><span>STAY A LITTLE LONGER</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section section-pad" aria-labelledby="reviews-heading">
+      <div class="container review-wrap">
+        <p class="eyebrow light-eyebrow"><span></span> KIND WORDS, GOOD PEOPLE</p>
+        <h2 id="reviews-heading">Don't just take<br><em>our word for it.</em></h2>
+        <div class="review-slider" aria-live="polite">
+          <article class="review-slide active"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“My favorite little corner in the city. The coffee is exceptional, but it’s the people who keep me coming back.”</blockquote><p class="review-author">JAMIE R. <span>· REGULAR SINCE 2019</span></p></article>
+          <article class="review-slide" hidden><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The kind of place that remembers your name and somehow makes Tuesday feel like Saturday.”</blockquote><p class="review-author">MORGAN L. <span>· LOCAL NEIGHBOR</span></p></article>
+          <article class="review-slide" hidden><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The cardamom bun is worth getting out of bed for. The lovely team is just the icing on top.”</blockquote><p class="review-author">ALEX P. <span>· WEEKEND VISITOR</span></p></article>
+        </div>
+        <div class="review-controls"><button type="button" class="review-arrow" data-direction="-1" aria-label="Previous review">←</button><span class="review-count" aria-live="polite">01 <i>/</i> 03</span><button type="button" class="review-arrow" data-direction="1" aria-label="Next review">→</button></div>
+      </div>
+    </section>
+
+    <section class="reservation-section section-pad" id="reserve" aria-labelledby="reserve-heading">
+      <div class="container reservation-grid">
+        <div class="reservation-copy reveal"><p class="eyebrow"><span></span> THERE'S A SEAT WITH YOUR NAME ON IT</p><h2 id="reserve-heading">Make a little<br><em>room for good.</em></h2><p class="body-copy">Meeting a friend, planning a slow brunch, or just want your favorite spot? Let us know when to expect you.</p><div class="reservation-detail"><span aria-hidden="true">✳</span><p><strong>Walk-ins are always welcome.</strong><br>For groups of 7 or more, please give us a call.</p></div><a class="text-link" href="tel:+12125550146">Call us: (212) 555-0146 <span aria-hidden="true">→</span></a></div>
+        <form class="reservation-form reveal" id="reservation-form">
+          <div class="form-row"><label for="guest-name">Your name<input id="guest-name" name="name" autocomplete="name" required minlength="2" placeholder="Alex Morgan"></label><label for="guest-email">Email address<input id="guest-email" name="email" type="email" autocomplete="email" required placeholder="alex@example.com"></label></div>
+          <div class="form-row"><label for="guest-date">Date<input id="guest-date" name="date" type="date" required></label><label for="guest-time">Time<select id="guest-time" name="time" required><option value="">Choose a time</option><option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option></select></label></div>
+          <label for="guest-count">Number of guests<select id="guest-count" name="guests" required><option value="">Choose a party size</option><option value="1">Just me</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select></label>
+          <button class="button form-submit" type="submit">Request a table <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          <p class="form-note">This demo form doesn't send reservations. Please call us to book a table.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-grid">
+        <div class="contact-info"><p class="eyebrow light-eyebrow"><span></span> COME FIND YOUR SLOW</p><h2 id="contact-heading">See you<br><em>around.</em></h2>
+          <div class="contact-details"><div><span class="detail-label">COME BY</span><p>42 Orchard Street<br>New York, NY 10002</p><a href="https://maps.google.com/?q=42+Orchard+Street+New+York+NY+10002" target="_blank" rel="noopener noreferrer" class="text-link light-link">Get directions <span aria-hidden="true">↗</span></a></div><div><span class="detail-label">WHEN WE'RE HERE</span><p>Monday—Friday <span>7:30 am — 5 pm</span><br>Saturday—Sunday <span>8 am — 5 pm</span></p></div><div><span class="detail-label">SAY HELLO</span><p><a href="tel:+12125550146">(212) 555-0146</a><br><a href="mailto:hello@thedailygrind.cafe">hello@thedailygrind.cafe</a></p></div></div>
+        </div>
+        <div class="map-frame"><iframe title="Map showing The Daily Grind at 42 Orchard Street, New York" src="https://maps.google.com/maps?q=42%20Orchard%20Street%2C%20New%20York%2C%20NY%2010002&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">dg.</span><span>The Daily Grind<small>GOOD COFFEE. GOOD COMPANY.</small></span></a><p>Made with care in New York City. © <span id="year"></span> The Daily Grind.</p><div class="social-links"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)">IG</a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)">FB</a></div></div></footer>
+
+  <dialog class="lightbox" aria-label="Gallery image viewer"><button class="lightbox-close" type="button" aria-label="Close image viewer">×</button><img src="" alt=""><p class="lightbox-caption"></p></dialog>
+</body>
+</html>
